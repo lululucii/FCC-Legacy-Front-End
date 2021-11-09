@@ -1,0 +1,91 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e555c;
+  color: white;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.clock {
+  text-align: center;
+  font-size: 2.5em;
+  transform: scale(0.7);
+}
+@media (min-width: 460px) {
+  .clock {
+    transform: scale(1);
+  }
+}
+.clock > .length-setters {
+  margin: 0.25em;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 460px) {
+  .clock > .length-setters {
+    flex-direction: row;
+  }
+}
+.clock > .length-setters > .length-setter {
+  margin: 0 0.5em;
+}
+.clock > .display {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  border: 5px solid black;
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
+.clock > .display.imminent {
+  color: red;
+}
+.clock > .display > .time-left {
+  font-size: 2em;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: inherit;
+  color: inherit;
+}
+button:hover {
+  color: red;
+}
+
+.length-setter {
+  font-size: 0.8em;
+}
+
+.design {
+  font-size: 0.5em;
+  color: coral;
+}
+
+.author {
+  font-size: 0.5em;
+  color: #000;
+}/*# sourceMappingURL=style.css.map */
